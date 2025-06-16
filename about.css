@@ -1,0 +1,116 @@
+/* === Reset & Global === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(0, 129, 201, 0.7), rgba(255, 215, 0, 0.7)),
+    url("wilamowice-5249675_1920.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background-color: #0081c9;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00e0ff;
+}
+
+/* === About Section === */
+.about-section,
+.aboutsection2 {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.about-section h1 {
+  font-size: 42px;
+  color: #0081c9;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 800;
+  position: relative;
+}
+
+.about-section h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #00a3ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.aboutsection2 h2 {
+  font-size: 26px;
+  color: #005a8d;
+  margin: 30px 0 10px;
+}
+
+/* === Paragraph Styling === */
+.about-section p,
+.aboutsection2 p {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-left: 4px solid #00a3ff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 17px; /* fixed typo here */
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #0081c9;
+  color: white;
+  font-weight: 600;
+  margin-top: 50px;
+}
